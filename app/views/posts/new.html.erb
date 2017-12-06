@@ -1,0 +1,41 @@
+<% content_for :title, "Posts" %>
+
+<% content_for :left do %>
+
+<h2>All Posts</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Content</th>
+            <th>Author/th>
+        </tr>
+    </thead>
+</table>
+
+<% end %>
+
+<% content_for :middle do %>
+
+<h2>New Post</h2>
+<form action="" method="post">
+    <p>Title</p>
+    <input type="text">
+    <p>Content</p>
+    <textarea name="" cols="30" rows="10"></textarea><br>
+    <label>Author</label>
+    <select name="">
+        <option value="">John Doe</option>
+    </select>
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<% end %>
+
+<% content_for :right do %>
+
+<h2>Go to Users Page</h2>
+<a href="/users"><button>Users</button></a>
+
+<% end %>
